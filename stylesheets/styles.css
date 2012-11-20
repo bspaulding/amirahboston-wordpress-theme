@@ -228,20 +228,6 @@ article>figure.wide,
 article>figure.wide>img { height: 180px; }
 article>figure>img { border-radius: 9px; z-index: -1; position: relative; }
 
-article>time[pubdate].hang-left>div {
-  background: #4C036D;
-  color: rgb(235,235,235);
-  font-family: "futura-pt-condensed";
-  text-align: center;
-
-  padding: 8px 0px;
-  width: 72px; height: 88px;
-  position: absolute; left: -104px; top: 16px;
-}
-article>time[pubdate].hang-left>div>h1 { line-height: 32px; font-size: 28px; text-shadow: none; }
-article>time[pubdate].hang-left>div>h2 { line-height: 32px; font-size: 32px; text-shadow: none; }
-article>time[pubdate].hang-left>div>h3 { line-height: 16px; font-size: 16px; text-shadow: none; }
-
 article {
   border-top: 8px solid rgb(198, 153, 219);
   border-top-color: rgb(76, 3, 109);
