@@ -1,16 +1,6 @@
 <? get_header(); ?>
 <section id="home">
-  <section class="slider" data-auto="3000" data-speed="500">
-    <ul>
-      <li style="display:block;">
-        <video controls poster="<? bloginfo('template_url'); ?>/images/amirah-poster.png">
-        </video>
-      </li>
-      <li style="display:none;">
-        Slide2
-      </li>
-    </ul>
-  </section>
+  <? motingo_swipejs_slider(); ?>
   <? if ( have_posts() ) : ?>
     <section id="articles">
     <? while ( have_posts() ) : the_post(); ?>
