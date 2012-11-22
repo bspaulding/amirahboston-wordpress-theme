@@ -296,6 +296,7 @@ article>time[pubdate] { background: rgb(76, 3, 109); }
 
 .aside {
   width: 100%;
+  margin-bottom: 32px;
   box-sizing: border-box;
 
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27);
@@ -365,7 +366,7 @@ article>time[pubdate] { background: rgb(76, 3, 109); }
 #home { float: left; }
 
 #home>#articles { width: 75%; float: left; }
-#home>#twitter  { width: 25%; float: right; }
+#home .aside  { width: 25%; float: right; }
 
 #home>#articles>article { width: 80%; margin-bottom: 32px; }
 #home>#articles>article>p { margin-bottom: 16px; }
