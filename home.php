@@ -9,7 +9,7 @@
           <? the_date() ?>
         </time>
         <h1><? the_title() ?></h1>
-        <h5 class="author">By <? the_author() ?></h5>
+        <h5 class="author"><? the_author() ?></h5>
         <p><? the_excerpt() ?></p>
         <p class="article-link"><a href="<? the_permalink() ?>">View Full Article</a></p>
       </article>

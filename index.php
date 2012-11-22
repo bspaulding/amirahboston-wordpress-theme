@@ -10,7 +10,7 @@
       <? endif; ?>
       <h1><? the_title() ?></h1>
       <? if ( !is_page() ) : ?>
-      <h5 class="author">By <? the_author() ?></h5>
+      <h5 class="author"><? the_author() ?></h5>
       <? endif; ?>
       <? the_content() ?>
       <p class="article-link"><a href="<? the_permalink() ?>">Permalink</a></p>
