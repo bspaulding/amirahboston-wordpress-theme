@@ -136,8 +136,7 @@ nav>ul>li>a:active {
 
 nav>ul>li>a:active {}
 
-footer>nav.mobile {
-  display: none;
+footer>nav {
   float: left;
   background: #d3acdf;
   width: 120%; position: relative; left: -10%; color: #fdfdfd;
@@ -145,8 +144,8 @@ footer>nav.mobile {
   margin-bottom: 32px;
 }
 
-footer>nav.mobile a:link,
-footer>nav.mobile a:visited { color: #fdfdfd; }
+footer>nav a:link,
+footer>nav a:visited { color: #fdfdfd; }
 
 #logo {
   position: absolute; top: -72px; left: 0px;
@@ -460,7 +459,7 @@ input[type="submit"]:active {
 
   article>p { clear: both; }
 
-  footer>nav.mobile { display: block; }
+  footer>nav { display: block; }
 }
 
 @media all and (max-width: 480px) {
