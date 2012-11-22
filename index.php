@@ -2,13 +2,17 @@
 <? if ( have_posts() ) : ?>
   <section>
   <? while ( have_posts() ) : the_post(); ?>
-    <article>
+    <article <? if ( is_page() ) { echo 'class="page"'; } ?>>
+      <? if ( !is_page() ) : ?>
       <time datetime="2012-07-14" pubdate>
         <? the_date() ?>
       </time>
+      <? endif; ?>
       <h1><? the_title() ?></h1>
+      <? if ( !is_page() ) : ?>
       <h5 class="author">By <? the_author() ?></h5>
-      <p><? the_content() ?></p>
+      <? endif; ?>
+      <? the_content() ?>
       <p class="article-link"><a href="<? the_permalink() ?>">Permalink</a></p>
     </article>
   <? endwhile; ?>
