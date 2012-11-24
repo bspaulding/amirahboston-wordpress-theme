@@ -136,6 +136,8 @@ nav>ul>li>a:active {
 
 nav>ul>li>a:active {}
 
+footer { float: left; }
+
 footer>nav {
   float: left;
   background: #d3acdf;
@@ -364,8 +366,6 @@ article>time[pubdate] { background: rgb(76, 3, 109); }
 }
 .aside.quote.left  { float: left;  margin-right: -64px; left:  -96px; }
 .aside.quote.right { float: right; margin-left:  -64px; right: -96px; }
-
-#home { float: left; }
 
 #home>#articles { width: 75%; float: left; }
 #home .aside  { width: 25%; float: right; }
