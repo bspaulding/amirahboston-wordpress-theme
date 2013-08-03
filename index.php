@@ -1,21 +1,21 @@
-<? get_header(); ?>
-<? if ( have_posts() ) : ?>
+<?php get_header(); ?>
+<?php if ( have_posts() ) : ?>
   <section>
-  <? while ( have_posts() ) : the_post(); ?>
-    <article <? if ( is_page() ) { echo 'class="page"'; } ?>>
-      <? if ( !is_page() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
+    <article <?php if ( is_page() ) { echo 'class="page"'; } ?>>
+      <?php if ( !is_page() ) : ?>
       <time datetime="2012-07-14" pubdate>
-        <? the_date() ?>
+        <?php the_date() ?>
       </time>
-      <? endif; ?>
-      <h1><? the_title() ?></h1>
-      <? if ( !is_page() ) : ?>
-      <h5 class="author"><? the_author() ?></h5>
-      <? endif; ?>
-      <? the_content() ?>
-      <p class="article-link"><a href="<? the_permalink() ?>">Permalink</a></p>
+      <?php endif; ?>
+      <h1><?php the_title() ?></h1>
+      <?php if ( !is_page() ) : ?>
+      <h5 class="author"><?php the_author() ?></h5>
+      <?php endif; ?>
+      <?php the_content() ?>
+      <p class="article-link"><a href="<?php the_permalink() ?>">Permalink</a></p>
     </article>
-  <? endwhile; ?>
+  <?php endwhile; ?>
   </section>
-<? endif; ?>
-<? get_footer(); ?>
+<?php endif; ?>
+<?php get_footer(); ?>

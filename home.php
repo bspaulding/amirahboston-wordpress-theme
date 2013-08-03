@@ -1,21 +1,21 @@
-<? get_header(); ?>
+<?php get_header(); ?>
 <section id="home">
-  <? motingo_swipejs_slider(); ?>
-  <? if ( have_posts() ) : ?>
+  <?php motingo_swipejs_slider(); ?>
+  <?php if ( have_posts() ) : ?>
     <section id="articles">
-    <? while ( have_posts() ) : the_post(); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
       <article>
         <time datetime="2012-07-14" pubdate>
-          <? the_date() ?>
+          <?php the_date() ?>
         </time>
-        <h1><? the_title() ?></h1>
-        <h5 class="author"><? the_author() ?></h5>
-        <p><? the_excerpt() ?></p>
-        <p class="article-link"><a href="<? the_permalink() ?>">View Full Article</a></p>
+        <h1><?php the_title() ?></h1>
+        <h5 class="author"><?php the_author() ?></h5>
+        <p><?php the_excerpt() ?></p>
+        <p class="article-link"><a href="<?php the_permalink() ?>">View Full Article</a></p>
       </article>
-    <? endwhile; ?>
+    <?php endwhile; ?>
     </section>
-  <? endif; ?>
-  <? get_sidebar(); ?>
+  <?php endif; ?>
+  <?php get_sidebar(); ?>
 </section>
-<? get_footer(); ?>
+<?php get_footer(); ?>

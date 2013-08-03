@@ -1,4 +1,4 @@
-<? if ( !dynamic_sidebar() ) : ?>
+<?php if ( !dynamic_sidebar() ) : ?>
 <section class="aside">
   <h1>Widget Title</h1>
   <ul class="aside-content">
@@ -19,4 +19,4 @@
     <li>Item</li>
   </ul>
 </section>
-<? endif; ?>
+<?php endif; ?>
