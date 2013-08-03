@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Amirah Boston</title>
+<head <?php language_attributes(); ?>>
+  <meta charset="<?php bloginfo('charset'); ?>"/>
+  <title><?php wp_title(); ?></title>
+  <meta name="description" content="<?php bloginfo('description'); ?>"/>
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="<? bloginfo('template_url'); ?>/stylesheets/html5reset-1.6.1.css">
   <link rel="stylesheet" type="text/css" href="<? bloginfo('template_url'); ?>/stylesheets/styles.css">
