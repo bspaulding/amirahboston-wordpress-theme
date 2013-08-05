@@ -1,13 +1,8 @@
 html {
   padding-top: 64px;
   background: #FDFDFD;
-/*  background: url('../images/bgs/relief-white-texture.jpg');*/
   background: url('../images/bgs/cross-hatch-light-grey.jpg');
-
-/*  background-image: url("../images/line-height-32px.jpg");
-  background-repeat: repeat;
-  background-position-y: 0px;
-*/}
+}
 
 #header-bg {
   position: absolute; top: 64px; left: 0px; right: 0px; height: 64px;
