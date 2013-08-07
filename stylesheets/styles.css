@@ -201,10 +201,6 @@ section.main  {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-section.aside { width: 202px; float: left; }
-section.aside {
-  margin-top: 96px;
-}
 
 section.main>article {
   width: 100%; display: block; margin: 0px;
@@ -308,6 +304,11 @@ article>time[pubdate] { background: rgb(76, 3, 109); }
 
 /* Sidebar style */
 
+section.aside { width: 202px; float: left; }
+section.aside:first-child {
+  margin-top: 96px;
+}
+.asides-container { width: 202px; }
 .aside {
   width: 100%;
   margin-bottom: 32px;
