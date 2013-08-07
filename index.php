@@ -1,6 +1,9 @@
 <?php get_header(); ?>
+<div class="asides-container">
+  <?php get_sidebar(); ?>
+</div>
 <?php if ( have_posts() ) : ?>
-  <section>
+  <section class="main">
   <?php while ( have_posts() ) : the_post(); ?>
     <article <?php if ( is_page() ) { echo 'class="page"'; } ?>>
       <?php if ( !is_page() ) : ?>
