@@ -514,6 +514,10 @@ input[type="submit"]:active {
   article>p { clear: both; }
 
   footer>nav { display: block; }
+
+  .asides-container { display: none; }
+  section.main { padding-left: 0px; }
+  section.main>article { margin: 0px auto; }
 }
 
 @media all and (max-width: 480px) {
